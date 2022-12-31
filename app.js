@@ -24,7 +24,7 @@ app.use(morgan('tiny'))
 app.use(authJwt())
 app.use('/public/uploads', express.static(__dirname + '/public/uploads'))
 app.use(errorHandler)
-
+// fucking error
 app.use(`${api}/categories`, categoriesRoutes)
 app.use(`${api}/orders`, ordersRoutes)
 app.use(`${api}/products`, productsRoutes)
