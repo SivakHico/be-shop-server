@@ -9,7 +9,7 @@ import cors from 'cors'
 import 'dotenv/config'
 import authJwt from './helpers/jwt.js'
 import errorHandler from './helpers/error-handler.js'
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 2000
 const api = process.env.API_URL
 const connectDB = process.env.CONNECT_DB
 const app = express()
