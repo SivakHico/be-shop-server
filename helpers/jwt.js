@@ -4,7 +4,7 @@ export default function authJwt() {
     const secret = process.env.secret
     const api = process.env.API_URL
     return expressJwt({
-        secret,
+        secret: secret,
         algorithms: ['HS256'],
         isRevoked: isRevoked
     }).unless({
